@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		BA1ED38F282960A9003CEA2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1ED38E282960A9003CEA2A /* AppDelegate.swift */; };
 		BA1ED391282960A9003CEA2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1ED390282960A9003CEA2A /* SceneDelegate.swift */; };
-		BA1ED393282960A9003CEA2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1ED392282960A9003CEA2A /* ViewController.swift */; };
+		BA1ED393282960A9003CEA2A /* FindCepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1ED392282960A9003CEA2A /* FindCepViewController.swift */; };
 		BA1ED396282960A9003CEA2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1ED394282960A9003CEA2A /* Main.storyboard */; };
 		BA1ED398282960AD003CEA2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA1ED397282960AD003CEA2A /* Assets.xcassets */; };
 		BA1ED39B282960AD003CEA2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1ED399282960AD003CEA2A /* LaunchScreen.storyboard */; };
+		BA1ED3A4282BD76E003CEA2A /* ResultRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1ED3A3282BD76E003CEA2A /* ResultRequestViewController.swift */; };
+		BA1ED3A8282BED27003CEA2A /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1ED3A7282BED27003CEA2A /* Services.swift */; };
+		BA1ED3AA282BFF80003CEA2A /* CepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1ED3A9282BFF80003CEA2A /* CepModel.swift */; };
+		BAEA9F05283FADD20017F580 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA9F04283FADD20017F580 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA1ED38B282960A9003CEA2A /* CepAqui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CepAqui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1ED38E282960A9003CEA2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA1ED390282960A9003CEA2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BA1ED392282960A9003CEA2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA1ED392282960A9003CEA2A /* FindCepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCepViewController.swift; sourceTree = "<group>"; };
 		BA1ED395282960A9003CEA2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA1ED397282960AD003CEA2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA1ED39A282960AD003CEA2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA1ED39C282960AD003CEA2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA1ED3A3282BD76E003CEA2A /* ResultRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultRequestViewController.swift; sourceTree = "<group>"; };
+		BA1ED3A7282BED27003CEA2A /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		BA1ED3A9282BFF80003CEA2A /* CepModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CepModel.swift; sourceTree = "<group>"; };
+		BAEA9F04283FADD20017F580 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,57 @@
 			children = (
 				BA1ED38E282960A9003CEA2A /* AppDelegate.swift */,
 				BA1ED390282960A9003CEA2A /* SceneDelegate.swift */,
-				BA1ED392282960A9003CEA2A /* ViewController.swift */,
-				BA1ED394282960A9003CEA2A /* Main.storyboard */,
+				BA1ED3A5282BECEE003CEA2A /* Model */,
+				BA772AEC2840EF9700499EC1 /* View */,
+				BA1ED3A2282BD743003CEA2A /* Controller */,
 				BA1ED397282960AD003CEA2A /* Assets.xcassets */,
 				BA1ED399282960AD003CEA2A /* LaunchScreen.storyboard */,
 				BA1ED39C282960AD003CEA2A /* Info.plist */,
 			);
 			path = CepAqui;
+			sourceTree = "<group>";
+		};
+		BA1ED3A2282BD743003CEA2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA1ED392282960A9003CEA2A /* FindCepViewController.swift */,
+				BA1ED3A3282BD76E003CEA2A /* ResultRequestViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BA1ED3A5282BECEE003CEA2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BAEA9F03283FADB70017F580 /* Utils */,
+				BA1ED3A6282BECFE003CEA2A /* Service */,
+				BA1ED3A9282BFF80003CEA2A /* CepModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA1ED3A6282BECFE003CEA2A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BA1ED3A7282BED27003CEA2A /* Services.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BA772AEC2840EF9700499EC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA1ED394282960A9003CEA2A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BAEA9F03283FADB70017F580 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BAEA9F04283FADD20017F580 /* Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA1ED393282960A9003CEA2A /* ViewController.swift in Sources */,
+				BA1ED3AA282BFF80003CEA2A /* CepModel.swift in Sources */,
+				BA1ED3A8282BED27003CEA2A /* Services.swift in Sources */,
+				BA1ED393282960A9003CEA2A /* FindCepViewController.swift in Sources */,
+				BAEA9F05283FADD20017F580 /* Utils.swift in Sources */,
+				BA1ED3A4282BD76E003CEA2A /* ResultRequestViewController.swift in Sources */,
 				BA1ED38F282960A9003CEA2A /* AppDelegate.swift in Sources */,
 				BA1ED391282960A9003CEA2A /* SceneDelegate.swift in Sources */,
 			);
@@ -294,8 +350,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortrait UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,8 +378,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortrait UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
